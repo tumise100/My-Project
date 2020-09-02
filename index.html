@@ -3,7 +3,7 @@
     <head> 
         <title>Slideshow</title>
 	</head> 
-	 <script src="something.js"></script>
+	 <body>
 <div id="slideshow-example" data-component="slideshow">
 		<div role="list">
 			<div class="slide">
@@ -23,9 +23,14 @@
 			</div>
 		</div>
 	</div>
-
-  [data-component="slideshow"] .slide {
+	</body>
+  [[data-component="slideshow"] .slide {
 	display: none;
   text-align: center;
 }
 
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+
+<script src="something.js"></script>
